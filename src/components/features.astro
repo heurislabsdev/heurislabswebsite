@@ -4,51 +4,50 @@ import { Icon } from "astro-icon";
 
 const features = [
   {
-    title: "Bring Your Own Framework",
+    title: "Custom AI Solutions",
     description:
-      "Build your site using React, Svelte, Vue, Preact, web components, or just plain ol' HTML + JavaScript.",
-    icon: "bx:bxs-briefcase",
+      "Tailored AI-driven tools and services designed with your business needs in mind, leveraging advanced LLMs and real-world data.",
+    icon: "bx:bxs-brain",
   },
   {
-    title: "100% Static HTML, No JS",
+    title: "24/7 AI Availability",
     description:
-      "Astro renders your entire page to static HTML, removing all JavaScript from your final build by default.",
-    icon: "bx:bxs-window-alt",
+      "Our AI services ensure continuous operation, providing round-the-clock insights and support for your business operations.",
+    icon: "bx:bxs-time-five",
   },
   {
-    title: "On-Demand Components",
+    title: "Scalable and Secure",
     description:
-      "Need some JS? Astro can automatically hydrate interactive components when they become visible on the page.  ",
-    icon: "bx:bxs-data",
+      "Built for businesses of all sizes, our solutions scale with your growth while maintaining the highest levels of security.",
+    icon: "bx:bxs-shield-alt-2",
   },
   {
-    title: "Broad Integration",
+    title: "Diverse Application Range",
     description:
-      "Astro supports TypeScript, Scoped CSS, CSS Modules, Sass, Tailwind, Markdown, MDX, and any other npm packages.",
-    icon: "bx:bxs-bot",
+      "From enhancing customer experience to streamlining back-end operations, our AI has applications across various sectors.",
+    icon: "bx:bxs-category",
   },
   {
-    title: "SEO Enabled",
+    title: "Efficient Decision Making",
     description:
-      "Automatic sitemaps, RSS feeds, pagination and collections take the pain out of SEO and syndication. It just works!",
-    icon: "bx:bxs-file-find",
+      "Empower your business with data-driven decision-making, utilizing AI for insights that lead to better business outcomes.",
+    icon: "bx:bxs-dashboard",
   },
   {
-    title: "Community",
+    title: "Expert Support",
     description:
-      "Astro is an open source project powered by hundreds of contributors making thousands of individual contributions.",
-    icon: "bx:bxs-user",
+      "Gain access to our team of AI experts, dedicated to providing you with the guidance and support needed for seamless integration.",
+    icon: "bx:bxs-user-voice",
   },
 ];
 ---
 
 <div class="mt-16 md:mt-0">
   <h2 class="text-4xl lg:text-5xl font-bold lg:tracking-tight">
-    Everything you need to start a website
+    Powering Innovation with AI
   </h2>
   <p class="text-lg mt-4 text-slate-600">
-    Astro comes batteries included. It takes the best parts of state-of-the-art
-    tools and adds its own innovations.
+    Heuris Labs combines cutting-edge AI technology with expert knowledge to bring you solutions that redefine potential.
   </p>
 </div>
 
@@ -56,11 +55,11 @@ const features = [
   {
     features.map((item) => (
       <div class="flex gap-4 items-start">
-        <div class="mt-1 bg-black rounded-full  p-2 w-8 h-8 shrink-0">
+        <div class="mt-1 bg-blue-900 rounded-full  p-2 w-8 h-8 shrink-0">
           <Icon class="text-white" name={item.icon} />
         </div>
         <div>
-          <h3 class="font-semibold text-lg">{item.title}</h3>{" "}
+          <h3 class="font-semibold text-lg">{item.title}</h3>
           <p class="text-slate-500 mt-2 leading-relaxed">{item.description}</p>
         </div>
       </div>

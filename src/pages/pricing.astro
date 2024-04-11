@@ -6,16 +6,15 @@ import PricingCard from "@components/pricing.astro";
 
 const pricing = [
   {
-    name: "Personal",
+    name: "Basic",
     price: "Free",
     popular: false,
     features: [
-      "Lifetime free",
-      "Up to 3 users",
-      "Unlimited Pages",
-      "Astro Sub domain",
-      "Basic Integrations",
-      "Community Support",
+      "Access to standard AI models",
+      "Up to 3 projects",
+      "Basic analytics",
+      "Heuris Labs Sub domain",
+      "Standard Support",
     ],
     button: {
       text: "Get Started",
@@ -23,21 +22,20 @@ const pricing = [
     },
   },
   {
-    name: "Startup",
+    name: "Professional",
     price: {
-      monthly: "$19",
-      annual: "$16",
-      discount: "10%",
-      original: "$24",
+      monthly: "$49",
+      annual: "$39",
+      discount: "20%",
+      original: "$59",
     },
     popular: true,
     features: [
-      "All Free Features",
-      "Up to 20 users",
-      "20 Custom domains",
-      "Unlimited Collaborators",
-      "Advanced Integrations",
-      "Priority Support",
+      "All Basic Features",
+      "Up to 10 projects",
+      "Custom integrations",
+      "Advanced analytics",
+      "Priority email support",
     ],
     button: {
       text: "Get Started",
@@ -49,15 +47,14 @@ const pricing = [
     price: "Custom",
     popular: false,
     features: [
-      "All Pro Features",
-      "Unlimited Custom domains",
-      "99.99% Uptime SLA",
-      "SAML & SSO Integration",
-      "Dedicated Account Manager",
-      "24/7 Phone Support",
+      "All Professional Features",
+      "Unlimited projects",
+      "Custom AI model training",
+      "Dedicated support team",
+      "SLA & uptime guarantees",
     ],
     button: {
-      text: "Contact us",
+      text: "Contact Us",
       link: "/contact",
     },
   },
@@ -69,12 +66,14 @@ const pricing = [
     <Sectionhead>
       <Fragment slot="title">Pricing</Fragment>
       <Fragment slot="desc">
-        Simple & Predictable pricing. No Surprises.
+        Tailored AI solutions that fit your business needs.
       </Fragment>
     </Sectionhead>
 
     <div class="grid md:grid-cols-3 gap-10 mx-auto max-w-screen-lg mt-12">
-      {pricing.map((item) => <PricingCard plan={item} />)}
+      {pricing.map((item) => (
+        <PricingCard plan={item} />
+      ))}
     </div>
   </Container>
 </Layout>
