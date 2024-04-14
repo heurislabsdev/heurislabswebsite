@@ -2,9 +2,8 @@
 draft: false
 name: "Khushi"
 title: "Executive"
-avatar: {
-    src: "https://images.unsplash.com/photo-1633332755192-727a05c4013d?&fit=crop&w=280",
-    alt: "Khushi"
-}
+avatar:
+  src: "https://i.imgur.com/Hl59zvU.png"
+  alt: "Khushi"
 publishDate: "2022-11-08 15:39"
 ---
